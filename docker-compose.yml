@@ -16,7 +16,6 @@ php:
         - mysql
     volumes:
         - .:/var/www/html
-        - ./conf/fpm.conf:/etc/php-fpm.conf    
         - ./conf/php.ini:/usr/local/etc/php/php.ini
     environment:
         MYSQL_DATABASE: myapp
